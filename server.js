@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 var app = express();
 
 // register director where partials are
@@ -51,5 +51,5 @@ app.get('/about', (req,res)=>{
 });
 
 app.listen(port , () => {
-    console.log(`Server is up on port `${port});
+    console.log(`Server is up on port ${port}`);
 });
